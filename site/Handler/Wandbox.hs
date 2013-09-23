@@ -2,9 +2,13 @@
 module Handler.Wandbox where
 
 import Import
+import qualified Yesod                                  as Y
 
-getWandboxR :: Handler Html
+import Settings (widgetFile)
+import Foundation (Handler)
+
+getWandboxR :: Handler Y.Html
 getWandboxR = do
-    defaultLayout $ do
-        setTitle "Wandbox"
+    Y.defaultLayout $ do
+        Y.setTitle "Wandbox"
         $(widgetFile "wandbox")

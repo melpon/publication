@@ -5,17 +5,18 @@
 -- declared in the Foundation.hs file.
 module Settings where
 
-import Prelude
+import Import
+import qualified Language.Haskell.TH                    as TH
+import qualified Yesod.Default.Config                   as YDConfig
+import qualified Yesod.Default.Util                     as YDUtil
+import qualified Data.Text                              as T
+import qualified Data.Yaml                              as Yaml
+import qualified Data.Default                           as Default
+import qualified Text.Hamlet                            as Hamlet
+
+import Data.Yaml ((.:), (.:?))
 import Text.Shakespeare.Text (st)
-import Language.Haskell.TH.Syntax
-import Yesod.Default.Config
-import Yesod.Default.Util
-import Data.Text (Text)
-import Data.Yaml
-import Control.Applicative
-import Settings.Development
-import Data.Default (def)
-import Text.Hamlet
+import Settings.Development (development)
 
 -- Static setting below. Changing these requires a recompile
 
@@ -37,8 +38,8 @@ staticDir = "static"
 -- have to make a corresponding change here.
 --
 -- To see how this value is used, see urlRenderOverride in Foundation.hs
-staticRoot :: AppConfig DefaultEnv x -> Text
-staticRoot conf = [st|#{appRoot conf}/static|]
+staticRoot :: YDConfig.AppConfig YDConfig.DefaultEnv x -> T.Text
+staticRoot conf = [st|#{YDConfig.appRoot conf}/static|]
 
 -- | Settings for 'widgetFile', such as which template languages to support and
 -- default Hamlet settings.
@@ -46,27 +47,27 @@ staticRoot conf = [st|#{appRoot conf}/static|]
 -- For more information on modifying behavior, see:
 --
 -- https://github.com/yesodweb/yesod/wiki/Overriding-widgetFile
-widgetFileSettings :: WidgetFileSettings
-widgetFileSettings = def
-    { wfsHamletSettings = defaultHamletSettings
-        { hamletNewlines = AlwaysNewlines
+widgetFileSettings :: YDUtil.WidgetFileSettings
+widgetFileSettings = Default.def
+    { YDUtil.wfsHamletSettings = Hamlet.defaultHamletSettings
+        { Hamlet.hamletNewlines = Hamlet.AlwaysNewlines
         }
     }
 
 -- The rest of this file contains settings which rarely need changing by a
 -- user.
 
-widgetFile :: String -> Q Exp
-widgetFile = (if development then widgetFileReload
-                             else widgetFileNoReload)
+widgetFile :: String -> TH.Q TH.Exp
+widgetFile = (if development then YDUtil.widgetFileReload
+                             else YDUtil.widgetFileNoReload)
               widgetFileSettings
 
 data Extra = Extra
-    { extraCopyright :: Text
-    , extraAnalytics :: Maybe Text -- ^ Google Analytics
+    { extraCopyright :: T.Text
+    , extraAnalytics :: Maybe T.Text -- ^ Google Analytics
     } deriving Show
 
-parseExtra :: DefaultEnv -> Object -> Parser Extra
+parseExtra :: YDConfig.DefaultEnv -> Yaml.Object -> Yaml.Parser Extra
 parseExtra _ o = Extra
     <$> o .:  "copyright"
     <*> o .:? "analytics"
