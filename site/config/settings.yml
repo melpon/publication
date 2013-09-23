@@ -1,0 +1,22 @@
+Default: &defaults
+  host: "*4" # any IPv4 host
+  port: 5000
+  approot: "http://localhost:5000"
+  copyright: Insert copyright statement here
+  #analytics: UA-YOURCODE
+
+Development:
+  <<: *defaults
+  approot: "http://melpon.org/pub/test"
+  port: 5000
+
+Testing:
+  <<: *defaults
+
+Staging:
+  <<: *defaults
+
+Production:
+  <<: *defaults
+  approot: "http://melpon.org/pub"
+  port: 5100
