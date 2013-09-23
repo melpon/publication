@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Wandbox を支える技術',
+    subtitle: '牛舎と犬小屋の謎に迫る',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -22,19 +22,12 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title<br>Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
-  }/*, {
-    name: 'Second Name',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
-  }*/]
+    name: 'melpon',
+    company: '',
+    gplus: '',
+    twitter: 'melponn',
+    www: '',
+    github: 'http://github.com/melpon'
+  }]
 };
 
