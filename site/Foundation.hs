@@ -20,6 +20,10 @@ import Yesod.Static (Static)
 
 import Settings (widgetFile, Extra(..), staticDir, staticRoot)
 import Settings.Development (development)
+import Settings.StaticFiles
+  ( io_2012_slides_theme_css_default_css
+  , io_2012_slides_theme_css_phone_css
+  )
 
 -- | The site argument for your application. This can be a good place to
 -- keep settings and values requiring initialization before your application
