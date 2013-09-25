@@ -1,4 +1,16 @@
-.noanimation {
+slide.noanimation - slide.past {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+slide.noanimation.current {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+*:not(slide).noanimation {
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;

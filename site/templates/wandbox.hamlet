@@ -7,6 +7,17 @@
 
 <slide>
   <hgroup>
+    <h2>テスト
+
+<slide .noanimation>
+  <hgroup>
+    <h2>
+      <del>テスト
+  <article>
+    <p>テストテスト
+
+<slide>
+  <hgroup>
     <h2>こんなことってありませんか？
   <article .build .noanimation>
     <ul .build .noanimation>
