@@ -8,12 +8,12 @@
 <slide>
   <hgroup>
     <h2>こんなことってありませんか？
-  <article .build>
-    <ul .build>
+  <article .build .noanimation>
+    <ul .build .noanimation>
       <li>ちょっとしたコードを試したい
       <li>コードをみんなと共有したい
     <p>でも…
-    <ul .build>
+    <ul .build .noanimation>
       <li>コンパイラ入れるのが面倒
       <li>ライブラリ入れるのが面倒
       <li>ビルドするのが面倒

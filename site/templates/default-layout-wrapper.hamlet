@@ -12,6 +12,6 @@
     <link rel="stylesheet" media="all" href=@{StaticR io_2012_slides_theme_css_default_css}>
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href=@{StaticR io_2012_slides_theme_css_phone_css}>
     <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
-
+    ^{Y.pageHead pc}
   <body style="opacity: 0">
     ^{Y.pageBody pc}
