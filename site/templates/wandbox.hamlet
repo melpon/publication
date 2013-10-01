@@ -1,5 +1,4 @@
 <slide .title-slide .segue .nobackground>
-  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
   <hgroup .auto-fadein>
     <h1 data-config-title>
     <h2 data-config-subtitle>
@@ -7,32 +6,107 @@
 
 <slide>
   <hgroup>
-    <h2>テスト
-
-<slide .noanimation>
-  <hgroup>
-    <h2>
-      <del>テスト
+    <h2>普通の C++ 使いは日常的に仕様書を読んでいる
   <article>
-    <p>テストテスト
+    <p>その際、実際にコンパイラを動かして試したくなる場合がある
+    <h3>例:
+    <ul>
+      <li>「ISO/IEC 14882:2011 における xx.y.z/n の動作がどういうことなのかよく分からないな」
+      <li>「現行の gcc/clang でどういう動作をするのか試してみたいな」
 
 <slide>
   <hgroup>
-    <h2>こんなことってありませんか？
-  <article .build .noanimation>
-    <ul .build .noanimation>
-      <li>ちょっとしたコードを試したい
-      <li>コードをみんなと共有したい
-    <p>でも…
-    <ul .build .noanimation>
-      <li>コンパイラ入れるのが面倒
-      <li>ライブラリ入れるのが面倒
-      <li>ビルドするのが面倒
-      <li>とにかくコードを書く以外のことが全て面倒
+    <h2>普通の C++ 使いは日常的に paper を読んでいる
+  <article>
+    <p>その際、実際にコンパイラを動かして試したくなる場合がある
+    <h3>例:
+    <ul>
+      <li>「Nxxxx が gcc で実装されたのか」
+      <li>「最新の gcc でどういう動作をするのか試したいな」
 
 <slide>
+  <hgroup>
+    <h2>普通の C++ 使いは日常的にコンパイラのバグを報告している
   <article>
-    <iframe data-src="http://melpon.org/wandbox">
+    <p>その際、実際にコンパイラを動かして試したくなる場合がある
+    <h3>例:
+    <ul>
+      <li>「のバグ直ったんだっけ？」
+      <li>「最新の gcc/clang で直ってるかどうか試したいな」
+
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1 .red>そこで Wandbox
+
+<slide>
+  <hgroup>
+    <h2>Wandbox とは
+  <article>
+    <ul>
+      <li><a href="http://melpon.org/wandbox/">http://melpon.org/wandbox/</a>
+      <li>オンラインコンパイラ
+      <li>要するに <a href="http://ideone.com/">ideone</a> みたいなやつ
+    <h3>特徴
+    <ul>
+      <li>C++ 対応がすごい
+        <ul>
+          <li>gcc, clang の様々なバージョン
+          <li>gcc HEAD, clang HEAD にも対応（毎日ビルド）
+          <li>多彩なコンパイルオプション
+      <li>他の言語にもいろいろ対応
+      <li>リアルタイム出力
+      <li>キーバインディング選択
+      <li>パーマネントリンクと Twitter への投稿
+      <li>シンタックスハイライト
+      <li .red>はやい（確信）
+
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1><a href="http://melpon.org/wandbox/">デモ</a>
+  <aside .note>
+    <ul>
+      <li>前ページのそれぞれの機能について話す
+      <li>はやい（確信）について話す
+        <ul>
+          <li>ideone で何か実行して、clone してちょっと修正して再実行までに掛かる時間を測る
+          <li>Wandbox で何か実行して、ちょっと修正して再実行までに掛かる時間を測る
+
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1 .red>【重要】普通の C++ 使い以外の方もお使い頂けます【必読】
+
+<slide>
+  <hgroup>
+    <h2>C++/Python/Haskell/Erlang/etc 言語を勉強したい
+  <article>
+    <p>でもコンパイラ（あるいはランタイム）の入れ方が分からない/入れるのがめんどい
+    <p .red>そこで Wandbox
+    <ul>
+      <li>
+        <p>コード入力→実行のサイクルを繰り返しやすい
+        <p>→勉強に最適
+      <li>
+        <p>分からないことがあったら気軽に Twitter に投稿できる
+        <p>→きっと誰か答えてくれるはず
+
+<slide>
+  <hgroup>
+    <h2>誰かの質問にコードで答えるとき
+  <article>
+    <p>例:
+    <ul>
+      <li>「vector には push_back して clear してもメモリが解放されないバグがある！C++ はクソだ！」
+      <li>「キャパシティの概念を理解しましょう。こんな感じ: 」
+
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1 .red>Wandbox を使おう！
+
+<slide>
+  <hgroup>
+    <h2>要望やバグについて
+  <article>
+    <p><a href="https://github.com/melpon/wandbox/issues">issues</a> に登録するか <a href="https://twitter.com/melponn">@melponn</a> まで
 
 <slide .thank-you-slide .segue>
   <article .flexbox .vleft>
@@ -40,4 +114,3 @@
     <p>Important contact information goes here.
   <p data-config-contact>
 
-<slide class="backdrop"></slide>

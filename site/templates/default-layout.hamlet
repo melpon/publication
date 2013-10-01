@@ -1,2 +1,3 @@
 <slides .layout-widescreen>
   ^{widget}
+  <slide .backdrop>

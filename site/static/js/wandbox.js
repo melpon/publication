@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'Wandbox を支える技術',
-    subtitle: '牛舎と犬小屋の謎に迫る',
+    subtitle: '犬小屋と牛舎の深い関係',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
