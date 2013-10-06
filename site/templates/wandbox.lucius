@@ -27,3 +27,6 @@ slide.nextnoanimation.past {
     font-size: 65px;
   }
 }
+.context {
+  opacity: 0.3;
+}
