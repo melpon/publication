@@ -160,25 +160,6 @@
     <ul>
       <li>ほぼ JavaScript
       <li>Haskell コードを埋め込める
-      <li .red>JavaScript つらい
-
-<slide>
-  <hgroup>
-    <h2>^{internalTitle "templates"}
-  <article>
-    <h3>JavaScript つらい
-    <div .build>
-      <pre>
-        <code>$ cat **/*.hs | wc -l<br>781
-      <pre>
-        <code>$ cat **/*.hamlet | wc -l<br>87
-      <pre>
-        <code>$ cat **/*.lucius | wc -l<br>71
-      <pre>
-        <code>$ cat **/*.julius | wc -l<br>552
-      <ul>
-        <li>ありのまま今起こったことを話すぜ！
-        <li>『Haskell を勉強していたと思ったらいつの間にか JavaScript を書いていた』
 
 ^{internalIndex (Just "eventsource")}
 

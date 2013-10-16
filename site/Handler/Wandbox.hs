@@ -35,9 +35,13 @@ widgetInternal = $(widgetFile "wandbox-internal")
 
 serverIndexData :: Index
 serverIndexData = Index "目次"
-  [ TitleOnly ("all", "全体構成")
-  , TitleOnly ("management", "管理方法")
-  , TitleOnly ("compiler", "コンパイラ")
+  [ Title ("all", "全体構成")
+      [ TitleOnly ("mighttpd", "Mighttpd")
+      ]
+  , Title ("management", "サーバ管理")
+      [ TitleOnly ("chef", "Chef")
+      , TitleOnly ("deploy", "Deploy")
+      ]
   ]
 
 serverIndex :: Maybe String -> Widget

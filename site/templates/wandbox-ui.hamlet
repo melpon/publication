@@ -9,8 +9,8 @@
     <h3>その際、実際にコンパイラを動かして試したくなる場合がある
     <h3>例:
     <ul>
-      <li>「ISO/IEC 14882:2011 における xx.y.z/n の動作がどういうことなのかよく分からないな」
-      <li>「現行の gcc/clang でどういう動作をするのか試してみたいな」
+      <li>「ISO/IEC 14882:2011 における 3.4.2/2 がどういう動作するのかよく分からないな」
+      <li>「現行の gcc/clang でどういう動作をするのか試してみたい」
 
 <slide>
   <hgroup>
@@ -19,8 +19,8 @@
     <h3>その際、実際にコンパイラを動かして試したくなる場合がある
     <h3>例:
     <ul>
-      <li>「Nxxxx が gcc で実装されたのか」
-      <li>「最新の gcc でどういう動作をするのか試したいな」
+      <li>「<a href="http://isocpp.org/files/papers/N3648.html">N3648</a> が gcc で実装されたのか」
+      <li>「最新の gcc でどういう動作をするのか試したい」
 
 <slide>
   <hgroup>
@@ -29,8 +29,8 @@
     <h3>その際、実際にコンパイラを動かして試したくなる場合がある
     <h3>例:
     <ul>
-      <li>「のバグ直ったんだっけ？」
-      <li>「最新の gcc/clang で直ってるかどうか試したいな」
+      <li>「<a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=58302"><code>std::negative_binomial_distribution</code> がコンパイルエラーになるバグ</a>って直ったんだっけ？」
+      <li>「最新の gcc/clang で直ってるかどうか試したい」
 
 <slide>
   <article .takahashi .flexbox .vcenter>
@@ -76,9 +76,7 @@
 
 <slide>
   <article .takahashi .flexbox .vcenter>
-    <h1 .red>【重要】
-    <h1 .red>普通の C++ 使い以外の方もお使い頂けます
-    <h1 .red>【必読】
+    <h1 .red>【重要】普通の C++ 使い以外の方もお使い頂けます【必読】
 
 <slide>
   <hgroup>
@@ -101,7 +99,7 @@
     <h3>例:
     <ul>
       <li>「vector には push_back して clear してもメモリが解放されないバグがある！C++ はクソだ！」
-      <li>「キャパシティの概念を理解しましょう。こんな感じ: 」
+      <li>「キャパシティの概念を理解しましょう。<a href="http://melpon.org/wandbox/permlink/leLyU3OCyzpM7Vlk">こんな感じ</a> 」
 
 <slide>
   <article .takahashi .flexbox .vcenter>
