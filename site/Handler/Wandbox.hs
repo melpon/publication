@@ -8,12 +8,46 @@ import Settings (widgetFile)
 import Foundation (Handler, Widget, Route(StaticR))
 import Settings.StaticFiles (io_2012_slides_js_require_1_0_8_min_js, img_wandbox_actor_png)
 import RawString (rawstring)
+import Handler.Slide (getTitleWidget, indexToWidget, Index(..), Title(..))
 
 widgetUI :: Widget
 widgetUI = $(widgetFile "wandbox-ui")
 
+internalIndexData :: Index
+internalIndexData = Index "目次"
+  [ TitleOnly ("relation", "牛舎と犬小屋の関係")
+  , TitleOnly ("cattleshed", "牛舎")
+  , Title ("kennel", "犬小屋")
+      [ TitleOnly ("yesod", "Yesod")
+      , TitleOnly ("templates", "Templates")
+      , TitleOnly ("eventsource", "EventSource")
+      ]
+  ]
+
+internalIndex :: Maybe String -> Widget
+internalIndex = indexToWidget internalIndexData
+
+internalTitle :: String -> Widget
+internalTitle = getTitleWidget internalIndexData
+
 widgetInternal :: Widget
 widgetInternal = $(widgetFile "wandbox-internal")
+
+serverIndexData :: Index
+serverIndexData = Index "目次"
+  [ TitleOnly ("all", "全体構成")
+  , TitleOnly ("management", "管理方法")
+  , TitleOnly ("compiler", "コンパイラ")
+  ]
+
+serverIndex :: Maybe String -> Widget
+serverIndex = indexToWidget serverIndexData
+
+serverTitle :: String -> Widget
+serverTitle = getTitleWidget serverIndexData
+
+widgetServer :: Widget
+widgetServer = $(widgetFile "wandbox-server")
 
 sourceHamletSample1 :: String
 sourceHamletSample1 = [rawstring|

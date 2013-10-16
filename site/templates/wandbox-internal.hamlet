@@ -2,35 +2,13 @@
   <hgroup>
     <h2>Wandbox の中身
 
-<slide>
-  <hgroup>
-    <h2>目次
-  <article>
-    <ul>
-      <li>牛舎と犬小屋の関係
-      <li>牛舎
-      <li>犬小屋
-        <ul>
-          <li>Yesod
-          <li>Templates
-          <li>EventSource
+^{internalIndex Nothing}
+
+^{internalIndex (Just "relation")}
 
 <slide>
   <hgroup>
-    <h2>牛舎と犬小屋の関係
-  <article>
-    <ul>
-      <li>牛舎と犬小屋の関係
-      <li .context>牛舎
-      <li .context>犬小屋
-        <ul>
-          <li>Yesod
-          <li>Templates
-          <li>EventSource
-
-<slide>
-  <hgroup>
-    <h2>牛舎と犬小屋の関係
+    <h2>^{internalTitle "relation"}
   <article>
     <h3>Wandbox は、大きく２つのモジュールに分けられる
     <ul .build>
@@ -43,34 +21,21 @@
           <li>読めない
       <li>犬小屋（kennel）
         <ul>
-          <li>ユーザからの HTTP リクエストを受けて牛舎とやりとりするモジュール
+          <li>普通の Web サーバ
           <li>Wandbox の UI
           <li><a href="https://twitter.com/melponn">@melponn</a> 作
           <li>Haskell で書かれてる
           <li>読めない
 
 <slide>
-  <hgroup>
-    <h2>牛舎と犬小屋の関係
   <article .flexbox .vcenter>
     <img .reflect src=@{StaticR img_wandbox_actor_png} alt="牛舎と犬小屋の関係">
 
-<slide>
-  <hgroup>
-    <h2>牛舎
-  <article>
-    <ul>
-      <li .context>牛舎と犬小屋の関係
-      <li>牛舎
-      <li .context>犬小屋
-        <ul>
-          <li>Yesod
-          <li>Templates
-          <li>EventSource
+^{internalIndex (Just "cattleshed")}
 
 <slide>
   <hgroup>
-    <h2>牛舎
+    <h2>^{internalTitle "cattleshed"}
   <article>
     <ul>
       <li .red>よく分からない仕組みで動いてる
@@ -84,26 +49,15 @@
 
 <slide>
   <hgroup>
-    <h2>牛舎
+    <h2>^{internalTitle "cattleshed"}
   <article .flexbox .vcenter>
     <h2>詳しいことは <a href="https://twitter.com/kikairoya">@kikairoya</a> を問い詰めよう
 
-<slide>
-  <hgroup>
-    <h2>犬小屋 - Yesod
-  <article>
-    <ul>
-      <li .context>牛舎と犬小屋の関係
-      <li .context>牛舎
-      <li>犬小屋
-        <ul>
-          <li>Yesod
-          <li .context>Templates
-          <li .context>EventSource
+^{internalIndex (Just "yesod")}
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Yesod
+    <h2>^{internalTitle "yesod"}
   <article>
     <h3><a href="http://www.yesodweb.com/">Yesod</a> という Haskell の Web フレームワークで作ってる
     <div .build>
@@ -120,7 +74,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Yesod
+    <h2>^{internalTitle "yesod"}
   <article>
     <h3><a href="http://www.yesodweb.com/">Yesod</a> という Haskell の Web フレームワークで作ってる
     <h3>実際のところ
@@ -137,22 +91,11 @@
           <li>未だに型の読み方が分からない
           <li>それでもこんな Web アプリケーションぐらいなら書ける
 
-<slide>
-  <hgroup>
-    <h2>犬小屋 - Templates
-  <article>
-    <ul>
-      <li .context>牛舎と犬小屋の関係
-      <li .context>牛舎
-      <li>犬小屋
-        <ul>
-          <li .context>Yesod
-          <li>Templates
-          <li .context>EventSource
+^{internalIndex (Just "templates")}
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>HTML, CSS, JavaScript
     <ul>
@@ -160,7 +103,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>hamlet
     <pre .prettyprint .lang-html data-lang="hamlet">#{sourceHamletSample1}
@@ -171,7 +114,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>hamlet
     <pre .prettyprint .lang-html data-lang="html">#{sourceHamletSample1Html}
@@ -180,7 +123,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>hamlet
     <pre .prettyprint .lang-html data-lang="hamlet">#{sourceHamletSample2}
@@ -190,7 +133,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>lucius
     <pre .prettyprint .lang-css data-lang="lucius">#{sourceLuciusSample}
@@ -201,7 +144,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>lucius
     <pre .prettyprint .lang-css data-lang="css">#{sourceLuciusSampleCss}
@@ -210,7 +153,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>julius
     <pre .prettyprint .lang-javascript data-lang="julius">#{sourceJuliusSample}
@@ -221,7 +164,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - Templates
+    <h2>^{internalTitle "templates"}
   <article>
     <h3>JavaScript つらい
     <div .build>
@@ -237,22 +180,11 @@
         <li>ありのまま今起こったことを話すぜ！
         <li>『Haskell を勉強していたと思ったらいつの間にか JavaScript を書いていた』
 
-<slide>
-  <hgroup>
-    <h2>犬小屋 - EventSource
-  <article>
-    <ul>
-      <li .context>牛舎と犬小屋の関係
-      <li .context>牛舎
-      <li>犬小屋
-        <ul>
-          <li .context>Yesod
-          <li .context>Templates
-          <li>EventSource
+^{internalIndex (Just "eventsource")}
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - EventSource
+    <h2>^{internalTitle "eventsource"}
   <article>
     <h3>リアルタイム出力
     <pre .prettyprint .lang-haskell data-lang="haskell">#{sourceLoopSample}
@@ -262,7 +194,7 @@
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - EventSource
+    <h2>^{internalTitle "eventsource"}
   <article>
     <h3>リアルタイム出力の仕組み
     <ul>
@@ -279,8 +211,23 @@ TODO: EventSource の仕組みを書く
 
 <slide>
   <hgroup>
-    <h2>犬小屋 - EventSource
+    <h2>^{internalTitle "eventsource"}
   <article>
     <h3>Q. WebSocket 使わないの？
     <h3>A. この型の意味を理解できる者だけが WebSocket を使いなさい
-    <iframe data-src="http://hackage.haskell.org/package/wai-websockets/docs/Network-Wai-Handler-WebSockets.html">
+    <pre .prettyprint .lang-haskell data-lang="haskell">
+      <code>
+        intercept :: Protocol p
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt; (Request -&gt; WebSockets p ())
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; Request
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; Maybe (Source (ResourceT IO) ByteString -&gt; Connection -&gt; ResourceT IO ())
+    <footer .source><a href="http://hackage.haskell.org/package/wai-websockets/docs/Network-Wai-Handler-WebSockets.html">Network.Wai.Handler.WebSockets</a>
+
+<slide>
+  <hgroup>
+    <h2>まとめ
+  <article>
+    <ul>
+      <li>Wandbox は牛舎と犬小屋が協調して動いてる
+      <li>牛舎は <a href="https://twitter.com/kikairoya">@kikairoya</a> を問い詰めよう
+      <li>犬小屋は普通の Web サーバ

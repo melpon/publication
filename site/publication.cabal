@@ -21,6 +21,7 @@ library
                      Settings.Development
                      RawString
                      Handler.Wandbox
+                     Handler.Slide
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -68,6 +69,8 @@ library
                  , conduit                       >= 1.0
                  , monad-logger                  >= 0.3
                  , fast-logger                   >= 0.3
+                 , blaze-html
+                 , blaze-markup
 
 executable         publication
     if flag(library-only)

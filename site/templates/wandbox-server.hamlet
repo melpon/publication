@@ -1,0 +1,7 @@
+<slide .segue .dark>
+  <hgroup>
+    <h2>Wandbox のサーバ構成
+
+^{serverIndex Nothing}
+
+^{serverIndex (Just "all")}

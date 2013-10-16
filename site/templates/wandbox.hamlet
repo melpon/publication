@@ -8,6 +8,8 @@
 
 ^{widgetInternal}
 
+^{widgetServer}
+
 <slide .thank-you-slide .segue>
   <article .flexbox .vleft>
     <h2>&lt;Thank You!&gt;

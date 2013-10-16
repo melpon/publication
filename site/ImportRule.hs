@@ -22,6 +22,7 @@ import qualified Data.Default                           as Default
 import qualified Data.IORef                             as IORef
 import qualified Data.List                              as List
 import qualified Data.Maybe                             as Maybe
+import qualified Data.Monoid                            as Monoid
 import qualified Data.Text                              as T
 import qualified Data.Text.Encoding                     as TE
 import qualified Data.Word                              as Word
@@ -44,6 +45,9 @@ import qualified System.Environment                     as Environment
 import qualified Text.Hamlet                            as Hamlet
 import qualified Text.Jasmine                           as Jasmine
 import qualified Text.Shakespeare.Text                  as Text
+import qualified Text.Blaze.Html5                       as Html5
+import qualified Text.Blaze.Html5.Attributes            as Html5Attr
+import qualified Text.Blaze.Internal                    as BlazeInternal
 
 import qualified Yesod                                  as Y
 import qualified Yesod.Default.Config                   as YDConfig
@@ -51,3 +55,4 @@ import qualified Yesod.Default.Handlers                 as YDHandlers
 import qualified Yesod.Default.Main                     as YDMain
 import qualified Yesod.Default.Util                     as YDUtil
 import qualified Yesod.Static                           as YStatic
+import qualified Yesod.Core.Widget                      as YWidget
