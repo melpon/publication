@@ -1,27 +1,3 @@
-slide.nextnoanimation + slide.current {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-slide.nextnoanimation.past {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-*:not(slide).noanimation {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-.build.noanimation > * {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
 .takahashi {
   h1 {
     font-size: 65px;
@@ -29,4 +5,7 @@ slide.nextnoanimation.past {
 }
 .context {
   opacity: 0.3;
+}
+slides > slide {
+  color: #515151;
 }
