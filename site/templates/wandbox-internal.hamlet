@@ -186,9 +186,60 @@
           <li>EventSource はレスポンスを最初は途中までしか返さない
           <li>受信が終わってないのでクライアントはデータを待ち続ける
 
-<!--
-TODO: EventSource の仕組みを書く
--->
+<slide>
+  <hgroup>
+    <h2>^{internalTitle "eventsource"}
+  <article>
+    <h3>普通のデータの受信
+    <pre data-lang="request">
+      <code>
+        GET /wandbox HTTP/1.1
+    <pre data-lang="response">
+      <code>
+        HTTP/1.1 200 OK
+        <span .red>Content-Type: application/json
+        <span .red>Content-Length: 221<br />
+        {“hoge”: “fuga”, ...}
+
+<slide>
+  <hgroup>
+    <h2>^{internalTitle "eventsource"}
+  <article>
+    <h3>ロングポーリングによる受信
+    <pre data-lang="request">
+      <code>
+        GET /wandbox/source HTTP/1.1
+    <pre data-lang="response">
+      <code .build>
+        <span>
+          HTTP/1.1 200 OK
+          <span .red>Content-Type: text/event-stream
+          <span .red>Transfer-Encoding: chunked
+        <span>
+          001A
+          data: hogefuga_hogefuga_ho
+        <span>
+          0017
+          gefuga_hogefuga
+          data: c
+        <span>
+          0010
+          onstexpr<br />
+        <span>
+          0
+
+<slide>
+  <hgroup>
+    <h2>^{internalTitle "eventsource"}
+  <article>
+    <h3>ロングポーリングによる受信
+    <pre data-lang="request">
+      <code>
+        GET /wandbox/source HTTP/1.1
+    <pre data-lang="response-text">
+      <code>
+        data: hogefuga_hogefuga_hogefuga_hogefuga
+        data: constexpr
 
 <slide>
   <hgroup>
