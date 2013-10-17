@@ -12,14 +12,14 @@
   <article>
     <h3>Wandbox は、大きく２つのモジュールに分けられる
     <ul .build>
-      <li>牛舎（cattleshed）
+      <li>牛舎（<a href="https://github.com/melpon/wandbox/tree/master/cattleshed">cattleshed</a>）
         <ul>
           <li>ソースを与えるとコンパイルや実行をして結果を返してくれるモジュール
           <li>Wandbox のコア
           <li><a href="https://twitter.com/kikairoya">@kikairoya</a> 作
           <li>C++ で書かれてる
           <li>読めない
-      <li>犬小屋（kennel）
+      <li>犬小屋（<a href="https://github.com/melpon/wandbox/tree/master/kennel">kennel</a>）
         <ul>
           <li>普通の Web サーバ
           <li>Wandbox の UI
