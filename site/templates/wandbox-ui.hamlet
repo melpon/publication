@@ -9,7 +9,7 @@
     <h3>その際、実際にコンパイラを動かして試したくなる場合がある
     <h3>例:
     <ul>
-      <li>「ISO/IEC 14882:2011 における 3.4.2/2 がどういう動作するのかよく分からないな」
+      <li>「ISO/IEC 14882:2011 における 3.4.2/2 が結果がどうなるのかよく分からないな」
       <li>「現行の gcc/clang でどういう動作をするのか試してみたい」
 
 <slide>
@@ -30,7 +30,7 @@
     <h3>例:
     <ul>
       <li>「<a href="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=58302"><code>std::negative_binomial_distribution</code> がコンパイルエラーになるバグ</a>って直ったんだっけ？」
-      <li>「最新の gcc/clang で直ってるかどうか試したい」
+      <li>「最新の gcc で直ってるかどうか試したい」
 
 <slide>
   <article .takahashi .flexbox .vcenter>
@@ -55,6 +55,7 @@
         <ul>
           <li>gcc, clang の様々なバージョン
           <li>gcc HEAD, clang HEAD にも対応（毎日ビルド）
+          <li><a href="http://bolero-murakami.github.io/Sprout/">Boost</a>, <a href="http://www.boost.org/">Sprout</a> ライブラリに対応
           <li>多彩なコンパイルオプション
       <li>他の言語にもいろいろ対応
       <li>リアルタイム出力
@@ -80,9 +81,9 @@
 
 <slide>
   <hgroup>
-    <h2>C++/Python/Haskell/Erlang/etc 言語を勉強したい
+    <h2>C++/Python/Haskell/etc などの言語を勉強するとき
   <article>
-    <h3>でもコンパイラ（あるいはランタイム）の入れ方が分からない/入れるのがめんどい
+    <h3>でもコンパイラとかの入れ方が分からない/入れるのがめんどい
     <h3 .red>そこで Wandbox
     <ul>
       <li>
@@ -99,7 +100,7 @@
     <h3>例:
     <ul>
       <li>「vector には push_back して clear してもメモリが解放されないバグがある！C++ はクソだ！」
-      <li>「キャパシティの概念を理解しましょう。<a href="http://melpon.org/wandbox/permlink/leLyU3OCyzpM7Vlk">こんな感じ</a> 」
+      <li>「キャパシティの概念を理解しましょう。<a href="http://melpon.org/wandbox/permlink/Xm93gD3bsW2hPaet">こんな感じ</a> 」
 
 <slide>
   <article .takahashi .flexbox .vcenter>

@@ -6,7 +6,12 @@ import qualified Yesod                                  as Y
 
 import Settings (widgetFile)
 import Foundation (Handler, Widget, Route(StaticR))
-import Settings.StaticFiles (io_2012_slides_js_require_1_0_8_min_js, img_wandbox_actor_png)
+import Settings.StaticFiles
+  ( io_2012_slides_js_require_1_0_8_min_js
+  , img_wandbox_actor_png
+  , img_mighttpd_001_png
+  , img_mighttpd_002_png
+  )
 import RawString (rawstring)
 import Handler.Slide (getTitleWidget, indexToWidget, Index(..), Title(..))
 

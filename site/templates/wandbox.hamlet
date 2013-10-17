@@ -10,6 +10,10 @@
 
 ^{widgetServer}
 
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1>質問
+
 <slide .thank-you-slide .segue>
   <article .flexbox .vleft>
     <h2>&lt;Thank You!&gt;

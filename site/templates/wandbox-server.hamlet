@@ -37,14 +37,17 @@
         <ul>
           <li .red>これ目的で使ってる
 
-<!-- Mighttpd の説明
 <slide>
   <hgroup>
     <h2>^{serverTitle "mighttpd"}
-  <article>
-    <ul>
-      <li>
--->
+  <article .flexbox .vcenter>
+    <img .reflect src=@{StaticR img_mighttpd_001_png} alt=^{serverTitle "mighttpd"}>
+
+<slide>
+  <hgroup>
+    <h2>^{serverTitle "mighttpd"}
+  <article .flexbox .vcenter>
+    <img .reflect src=@{StaticR img_mighttpd_002_png} alt=^{serverTitle "mighttpd"}>
 
 ^{serverIndex (Just "chef")}
 
@@ -65,16 +68,16 @@
   <hgroup>
     <h2>^{serverTitle "chef"}
   <article>
-    <h3>Chef で入れている設定の例
+    <h3>Chef で入れているレシピの例
     <ul>
-      <li>スワップファイルの設定
-      <li>Wandbox の実行環境の設定
+      <li>スワップファイル
+      <li>Wandbox の実行環境
         <ul>
           <li>ユーザ作成
           <li>github から取得
           <li>ビルド
           <li>デーモンとして起動（Upstart を使ってる）
-      <li>各種コンパイラのビルド設定
+      <li>各種コンパイラ
         <ul>
           <li>GCC, Clang, Python, Ruby
             <ul>
