@@ -53,6 +53,16 @@
   <article .flexbox .vcenter>
     <h2>詳しいことは <a href="https://twitter.com/kikairoya">@kikairoya</a> を問い詰めよう
 
+<slide>
+  <hgroup>
+    <h2>^{internalTitle "cattleshed"}
+  <article>
+    <h3>本人曰く
+    <ul>
+      <li><a href="https://twitter.com/kikairoya/status/391142370080608256">Twitter / kikairoya: @melponn 自由でオープンなソフトウェアなので誰でも内部を理解し、応用することができます</a>
+    <h3>誰か内部を理解して教えて下さい。
+
+
 ^{internalIndex (Just "yesod")}
 
 <slide>
@@ -71,6 +81,7 @@
         <li .build>Haskell できますって言いたかった
           <ul>
             <li>Haskell できるとかっこ良さそう
+            <li>Haskell できると彼女できるという噂が
 
 <slide>
   <hgroup>
@@ -90,6 +101,7 @@
           <li>未だにモナドの作り方分からない
           <li>未だに型の読み方が分からない
           <li>それでもこんな Web アプリケーションぐらいなら書ける
+          <li>彼女はできませんでしたが嫁はできました
 
 ^{internalIndex (Just "templates")}
 
@@ -216,17 +228,17 @@
           <span .red>Content-Type: text/event-stream
           <span .red>Transfer-Encoding: chunked
         <span>
-          001A
+          <span .red>001A
           data: hogefuga_hogefuga_ho
         <span>
-          0017
-          gefuga_hogefuga
+          <span .red>0018
+          gefuga_hogefuga<br />
           data: c
         <span>
-          0010
+          <span .red>0010
           onstexpr<br />
         <span>
-          0
+          <span .red>0
 
 <slide>
   <hgroup>
@@ -238,7 +250,7 @@
         GET /wandbox/source HTTP/1.1
     <pre data-lang="response-text">
       <code>
-        data: hogefuga_hogefuga_hogefuga_hogefuga
+        data: hogefuga_hogefuga_hogefuga_hogefuga<br />
         data: constexpr
 
 <slide>
