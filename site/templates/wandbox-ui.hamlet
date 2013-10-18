@@ -98,9 +98,8 @@
     <h2>誰かの質問にコードで答えるとき
   <article>
     <h3>例:
-    <ul>
-      <li>「vector には push_back して clear してもメモリが解放されないバグがある！C++ はクソだ！」
-      <li>「キャパシティの概念を理解しましょう。<a href="http://melpon.org/wandbox/permlink/Xm93gD3bsW2hPaet">こんな感じ</a> 」
+    <h3>Q.「vector には push_back して clear してもメモリが解放されないバグがある！C++ はクソだ！」
+    <h3>A.「キャパシティの概念を理解しましょう。<a href="http://melpon.org/wandbox/permlink/Xm93gD3bsW2hPaet">こんな感じ</a> 」
 
 <slide>
   <article .takahashi .flexbox .vcenter>

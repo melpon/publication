@@ -61,7 +61,7 @@
       <li>理論的にはサーバが死んでも簡単に復元できるはず
         <ul>
           <li>※ただし SQLite のデータを除く
-          <li>（いつかやる予定）
+          <li>（パーマネントリンクを作るためにコードや結果などを SQLite に入れてる）
       <li>melpon.org の Cookbook はここ: <a href="https://github.com/melpon/melpon.org">melpon/melpon.org</a>
 
 <slide>
