@@ -81,7 +81,7 @@
         <ul>
           <li>GCC, Clang, Python, Ruby
             <ul>
-              <li>ビルド
+              <li>ソースからビルド
           <li>GCC-HEAD, Clang-HEAD, Erlang-HEAD
             <ul>
               <li>最新リポジトリから取ってきてビルド

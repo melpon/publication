@@ -255,6 +255,29 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; Maybe (Source (ResourceT IO) ByteString -&gt; Connection -&gt; ResourceT IO ())
     <footer .source><a href="http://hackage.haskell.org/package/wai-websockets/docs/Network-Wai-Handler-WebSockets.html">Network.Wai.Handler.WebSockets</a>
 
+^{internalIndex (Just "kurou")}
+
+<slide>
+  <hgroup>
+    <h2>^{internalTitle "kurou"}
+  <article>
+    <ul .build>
+      <li>Yesod に苦労した
+        <ul>
+          <li>#yesodinstallbattle
+          <li>バージョン変わりすぎ
+      <li>HTML/CSS/JavaScript に苦労した
+        <ul>
+          <li>まともに触ったことが無いので大変
+          <li>どう組むのが一般的なのか分からなくて大変
+          <li>みんな適当にやってるっぽいと気がついたので適当に組んだ
+      <li>ドキュメントが無くて苦労した
+        <ul>
+          <li><a href="https://twitter.com/melponn/status/134903468593913856">Twitter / melponn: Haskell では ...</a>
+          <li><a href="https://twitter.com/melponn/status/171922845226643456">Twitter / melponn: Haskellerのドキュメントは、型がドキュメントになると ...</a>
+          <li><a href="http://hackage.haskell.org/package/hamlet/docs/Text-Hamlet.html">Text.Hamlet</a>
+          <li><a href="http://hackage.haskell.org/package/yesod-auth-1.2.0.2/docs/Yesod-Auth.html#v:defaultMaybeAuthId">Yesod.Auth</a>
+
 <slide>
   <hgroup>
     <h2>まとめ
@@ -263,3 +286,4 @@
       <li>Wandbox は牛舎と犬小屋が協調して動いてる
       <li>牛舎は <a href="https://twitter.com/kikairoya">@kikairoya</a> を問い詰めよう
       <li>犬小屋は普通の Web サーバ
+      <li>犬小屋を建てるのはなかなか大変だった

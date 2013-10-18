@@ -27,6 +27,7 @@ internalIndexData = Index "目次"
       , TitleOnly ("templates", "Templates")
       , TitleOnly ("eventsource", "EventSource")
       ]
+  , TitleOnly ("kurou", "苦労話")
   ]
 
 internalIndex :: Maybe String -> Widget
