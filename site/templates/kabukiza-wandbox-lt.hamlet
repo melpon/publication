@@ -1,0 +1,18 @@
+<slide .title-slide .segue .nobackground>
+  <hgroup .auto-fadein>
+    <h1 data-config-title>
+    <h2 data-config-subtitle>
+    <p data-config-presenter>
+
+^{toTakahashi "みなさん"}
+
+^{toTakahashi "歌舞伎座tech#2"}
+
+^{toTakahashi "お疲れ様でした"}
+
+<slide .thank-you-slide .segue>
+  <article .flexbox .vleft>
+    <h2>&lt;Thank You!&gt;
+    <p>Important contact information goes here.
+  <p data-config-contact>
+

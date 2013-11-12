@@ -4,3 +4,4 @@
 /robots.txt RobotsR GET
 
 /wandbox WandboxR GET
+/kabukiza-wandbox-lt KabukizaWandboxLtR GET

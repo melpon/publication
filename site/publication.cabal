@@ -21,6 +21,7 @@ library
                      Settings.Development
                      RawString
                      Handler.Wandbox
+                     Handler.KabukizaWandboxLt
                      Handler.Slide
 
     if flag(dev) || flag(library-only)
