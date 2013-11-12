@@ -143,4 +143,5 @@ getWandboxR = do
         Y.addScriptAttrs
             (StaticR io_2012_slides_js_require_1_0_8_min_js)
             [("data-main", "static/js/wandbox-slides")]
+        $(widgetFile "io-2012-ext")
         $(widgetFile "wandbox")

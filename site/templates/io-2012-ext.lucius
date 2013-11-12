@@ -1,0 +1,11 @@
+.takahashi {
+  h1 {
+    font-size: 65px;
+  }
+}
+slides > slide {
+  color: #515151;
+}
+slides h3 {
+  color: #515151;
+}
