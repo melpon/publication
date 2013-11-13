@@ -19,10 +19,25 @@ toTakahashi message = Y.toWidget [shamlet|
     <h1>#{message}
 |]
 
+-- Important version
+toTakahashiI :: String -> Widget
+toTakahashiI message = Y.toWidget [shamlet|
+<slide>
+  <article .takahashi .important .flexbox .vcenter>
+    <h1 .red>#{message}
+|]
+
+toWandboxURL :: Widget
+toWandboxURL = Y.toWidget [shamlet|
+<slide>
+  <article .takahashi .flexbox .vcenter>
+    <h1><a href="http://melpon.org/wandbox">http://melpon.org/wandbox</a>
+|]
+
 getKabukizaWandboxLtR :: Handler Y.Html
 getKabukizaWandboxLtR = do
     Y.defaultLayout $ do
-        Y.setTitle "Wandbox の紹介 at 歌舞伎座tech#2"
+        Y.setTitle "Wandbox の紹介 at 歌舞伎座.tech#2"
         Y.addScriptAttrs
             (StaticR io_2012_slides_js_require_1_0_8_min_js)
             [("data-main", "static/js/kabukiza-wandbox-lt-slides")]
