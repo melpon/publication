@@ -18,7 +18,7 @@
 ^{toTakahashiI "C++14 の機能を試したい"}
 
 ^{toTakahashi "「C++11でのWeb開発の実情」"}
-^{toTakahashiI "C++11 の機能を試したい"}
+^{toTakahashiI "C++0x の機能を試したい"}
 
 ^{toTakahashi "「rvalue referenceについて」"}
 ^{toTakahashiI "rvalue reference を試したい"}
@@ -65,8 +65,9 @@
 ^{toTakahashi "HEAD"}
 ^{toTakahashiI "使えます"}
 
-^{toTakahashi "C++11"}
 ^{toTakahashi "C++14"}
+^{toTakahashi "C++11"}
+^{toTakahashi "C++0x"}
 ^{toTakahashiI "使えます"}
 
 ^{toTakahashi "Boost"}
