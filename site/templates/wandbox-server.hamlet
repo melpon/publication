@@ -62,7 +62,7 @@
         <ul>
           <li>※ただし SQLite のデータを除く
           <li>（パーマネントリンクを作るためにコードや結果などを SQLite に入れてる）
-      <li>melpon.org の Cookbook はここ: <a href="https://github.com/melpon/melpon.org">melpon/melpon.org</a>
+      <li>melpon.org の Cookbook はここ: <a href="https://github.com/melpon/chef-melpon.org">melpon/chef-melpon.org</a>
 
 <slide>
   <hgroup>
